@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:background="#2c3342"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="0.3">
+
+        <LinearLayout
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/profile_backarrow_image_margin"
+                android:background="@drawable/backbutton" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                android:id="@+id/headerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_profile_margin"
+                android:text="Add to group"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/profile_profile_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/next_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <com.csipsimple.f5chat.font_family.Font_Welcome_scr_Tv_light
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_next_margin"
+                android:text="Done"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_below="@+id/header"
+        android:id="@+id/participants_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/addedPraticipantsView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/f5searchheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participants_gallery"
+        android:background="@color/searchbackground"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight=".15"
+            android:scaleType="centerInside"
+            android:src="@drawable/searchimg" />
+
+        <EditText
+            android:id="@+id/f5edittextsearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight=".85"
+            android:background="@null"
+            android:hint="Search"
+            android:singleLine="true"
+            android:textSize="21dp" />
+
+        <TextView
+            android:id="@+id/participantsCount"
+            android:layout_margin="5dp"
+            android:singleLine="true"
+            android:textSize="21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="0/78"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/participantsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/f5searchheader" />
+
+</RelativeLayout>

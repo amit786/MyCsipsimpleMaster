@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c3342">
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dial_header_margintop">
+
+        <LinearLayout
+
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dial_plusimage_width"
+                android:layout_height="@dimen/dial_plusimage_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/addimg" />
+        </LinearLayout>
+
+        <me.grantland.widget.AutofitTextView
+
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dial_edittext_marginleft"
+            android:layout_toLeftOf="@+id/clear"
+            android:layout_toRightOf="@+id/back"
+            android:text=""
+            autofit:minTextSize="18sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dial_edittext_number_textsize" />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="@dimen/dial_clearimage_width"
+            android:layout_height="@dimen/dial_clearimage_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/dial_clear_img" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toplayout">
+
+        <LinearLayout
+            android:id="@+id/dialrtoplayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btncall"
+            android:layout_marginLeft="@dimen/dial_layout_marginleft"
+            android:layout_marginRight="@dimen/dial_layout_marginright"
+            android:layout_marginTop="@dimen/dial_layout_margintop"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_bt1"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dial_num_textsize" />
+
+                        <com.f5chat.font_family.Font_welcome_scr_Tv_regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bt4"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dial_num_textsize" />
+
+                        <com.f5chat.font_family.Font_welcome_scr_Tv_regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dial_alphabet_marginbottom"
+                            android:text="g h i"
+                            android:textColor="@color/terms"
+                            android:textSize="@dimen/dial_alphabet_textsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bt7"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dial_num_textsize" />
+
+                        <com.f5chat.font_family.Font_welcome_scr_Tv_regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dial_alphabet_marginbottom"
+                            android:text="p q r s"
+                            android:textColor="@color/terms"
+                            android:textSize="@dimen/dial_alphabet_textsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_bt_star"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dial_star_textsize" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="t u v"
+                            android:textColor="@color/white"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_bt2"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dial_num_textsize" />
+
+                        <com.f5chat.font_family.Font_welcome_scr_Tv_regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dial_alphabet_marginbottom"
+                            android:text="a b c"
+                            android:textColor="@color/terms"
+                            android:textSize="@dimen/dial_alphabet_textsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bt5"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dial_num_textsize" />
+
+                        <com.f5chat.font_family.Font_welcome_scr_Tv_regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dial_alphabet_marginbottom"
+                            android:text="j k l"
+                            android:textColor="@color/terms"
+                            android:textSize="@dimen/dial_alphabet_textsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_bt8"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dial_num_textsize" />
+
+                        <com.f5chat.font_family.Font_welcome_scr_Tv_regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dial_alphabet_marginbottom"
+                            android:text="t u v"
+                            android:textColor="@color/terms"
+                            android:textSize="@dimen/dial_alphabet_textsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_bt0"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dial_num_textsize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dial_alphabet_marginbottom"
+                            android:text="+"
+                            android:textColor="@color/terms"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_bt3"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dial_num_textsize" />
+
+                        <com.f5chat.font_family.Font_welcome_scr_Tv_regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dial_alphabet_marginbottom"
+                            android:text="d e f"
+                            android:textColor="@color/terms"
+                            android:textSize="@dimen/dial_alphabet_textsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_bt6"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dial_num_textsize" />
+
+                        <com.f5chat.font_family.Font_welcome_scr_Tv_regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dial_alphabet_marginbottom"
+                            android:text="m n o"
+                            android:textColor="@color/terms"
+                            android:textSize="@dimen/dial_alphabet_textsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_bt9"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dial_num_textsize" />
+
+                        <com.f5chat.font_family.Font_welcome_scr_Tv_regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dial_alphabet_marginbottom"
+                            android:text="w x y z"
+                            android:textColor="@color/terms"
+                            android:textSize="@dimen/dial_alphabet_textsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_bt_hash"
+                    android:layout_width="@dimen/dial_width"
+                    android:layout_height="@dimen/dial_height"
+                    android:layout_margin="@dimen/dial_margin"
+                    android:background="@drawable/dialer_cirular_btn"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/hash_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="t u v"
+                            android:textColor="@color/white"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btncall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_exit"
+            android:layout_margin="@dimen/dial_callbutton_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.f5chat.view.OpenRegularButton
+                android:layout_width="@dimen/dial_button_width"
+                android:layout_height="@dimen/dial_button_height"
+                android:background="@drawable/agree_confirm_button"
+                android:text="Call"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/confirm_button_textsize" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="  Exit   "
+            android:textColor="@color/white"
+            android:textSize="@dimen/dial_exit_texxtsize" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

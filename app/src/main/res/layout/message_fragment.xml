@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+         />
+
+
+    <LinearLayout
+        android:id="@+id/layoutone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkgrey"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/borderlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_white">
+
+                <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                    android:id="@+id/tvAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="      All      "
+                    android:background="@drawable/left_frag_selecter"
+                    android:textColor="@color/upper_text_color_change_selector"
+                    android:textSize="17sp" />
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                    android:id="@+id/tvGroups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="  Groups  "
+                    android:background="@drawable/middle_frag_selecter"
+                    android:textColor="@color/upper_text_color_change_selector"
+                    android:textSize="17sp" />
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                    android:id="@+id/tvPrivate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="  Private  "
+                    android:background="@drawable/right_frag_selecter"
+                    android:textColor="@color/upper_text_color_change_selector"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/createGroup"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10sp"
+                android:src="@drawable/addimg" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_private"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dip"
+                android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/recentList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dip">
+
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

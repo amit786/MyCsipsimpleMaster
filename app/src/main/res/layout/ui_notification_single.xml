@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/user_pic"
+            android:layout_toRightOf="@+id/user_pic"
+            android:orientation="vertical">
+
+            <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Rajesh Kushwah"
+                android:textColor="@color/darkgrey"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/time"
+                    android:maxLength="50"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18dp" />
+
+
+                <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/message"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="05:00 PM"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/lightgrey" />
+
+    <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:drawableLeft="@drawable/ic_reply"
+        android:gravity="center"
+        android:text="Reply"
+        android:id="@+id/reply"
+        android:textColor="@color/lightgrey"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/lightgrey" />
+
+    <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+        android:id="@+id/notification_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/message"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Total 5 messages from this member."
+        android:textColor="@color/lightgrey"
+        android:textSize="18dp" />
+
+</LinearLayout>

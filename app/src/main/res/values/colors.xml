@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+		Copyright (C) 2010 Regis Montoya (aka r3gis - www.r3gis.fr)
+		Copyright (C) 2007-2008 Esmertec AG.
+	 	Copyright (C) 2007-2008 The Android Open Source Project
+	
+		This file is part of CSipSimple. CSipSimple is free software: you can
+		redistribute it and/or modify it under the terms of the GNU General
+		Public License as published by the Free Software Foundation, either
+		version 3 of the License, or (at your option) any later version.
+
+		CSipSimple is distributed in the hope that it will be useful, but
+		WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+		General Public License for more details. You should have received a
+		copy of the GNU General Public License along with CSipSimple. If not,
+		see <http://www.gnu.org/licenses/>.
+-->
+<!-- 	Parts of this file are extract from the android project distributed under Apache license relicensed in GPLv3 -->
+<resources>
+
+    <color name="account_inactive">#FF646464</color>
+    <color name="account_unregistered">#FFFFC200</color>
+    <color name="account_valid">#FF84E300</color>
+    <color name="account_error">#FFFF0F00</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkgrey">#2c3342</color>
+    <color name="lightgrey">#8c9099</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="pink">#ef3f5b</color>
+    <color name="agree_button_pressed_false">#ef3f5b</color>
+    <color name="agree_button_pressed_true">#F98FA0</color>
+    <color name="terms">#f0f2f5</color>
+    <color name="confirmcontact">#252c39</color>
+    <color name="contact">#2c3342</color>
+    <color name="dark_keypad">#1F242D</color>
+    <color name="light_keypad_effect">#C129303B</color>
+    <color name="white_with_alpha">#75FFFFFF</color>
+    <color name="grey">#edf0f4</color>
+    <color name="black">#141d2f</color>
+    <color name="colorPink">#ef3f5b</color>
+    <color name="searchbackground">#edf0f4</color>
+    <color name="friends_chat_back_grey">#edf0f4</color>
+    <color name="user_name_list">#1d2432</color>
+    <color name="light_blue">#cdcdcd</color>
+    <color name="toggle_disable">#D1D1D1</color>
+
+    <color name="colorPrimary_">#5DAC81</color>
+    <color name="colorPrimaryDark_">#4F916D</color>
+    <color name="colorAccent_">#5DAC81</color>
+    <color name="windowBackground">#1C1C1C</color>
+    <color name="colorButtonNormal">#FFFFFB</color>
+    <color name="textColorPrimary">#FFFFFB</color>
+    <color name="textColorPrimaryInverse">#1C1C1C</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="divider">#333333</color>
+    <color name="grey_click_effect">#ccedf0f4</color>
+    <color name="light_grey">#3a3a3a</color>
+    <color name="searchbackgroundtrue">#8ef2df</color>
+    <color name="dark_gray">#ffb3b3b3</color>
+
+</resources>

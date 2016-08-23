@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkgrey">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkgrey"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/grey_select_effect"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:src="@drawable/back_arrow_chat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Settings"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/privacy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:text="Privacy"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/privacy_layout"
+        android:id="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/list_item_select_effect">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Show Online Status"
+                android:textColor="@color/confirmcontact"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/secondview"
+        android:layout_below="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/light_blue"/>
+
+    <LinearLayout
+        android:layout_below="@+id/secondview"
+        android:id="@+id/third_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/list_item_select_effect">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Show Seen Status"
+                android:textColor="@color/confirmcontact"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/thirdview"
+        android:layout_below="@+id/third_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/light_blue"/>
+    <LinearLayout
+        android:layout_below="@+id/thirdview"
+        android:id="@+id/four_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/list_item_select_effect">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Collect Analytics Data"
+                android:textColor="@color/confirmcontact"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/fourview"
+        android:layout_below="@+id/four_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/light_blue"/>
+    <LinearLayout
+        android:layout_below="@+id/fourview"
+        android:id="@+id/fifth_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/list_item_select_effect">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Show your profile picture"
+                android:textColor="@color/confirmcontact"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/fifth_layout"
+        android:id="@+id/six_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/list_item_select_effect">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Deactivate Account"
+                android:textColor="@color/confirmcontact"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

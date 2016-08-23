@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!--android:layout_marginTop="@dimen/clist_header_margintop"-->
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/clist_imagewidth"
+                android:layout_height="@dimen/clist_imageheight"
+                android:layout_marginLeft="@dimen/clist_image_marginleft"
+                android:layout_margin="8dp"
+                android:src="@drawable/backbutton" />
+        </LinearLayout>
+
+        <com.csipsimple.f5chat.view.OpenRegularTextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Select the Country"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/clist_country_textsize" />
+
+        <com.csipsimple.f5chat.view.OpenRegularTextView
+            android:id="@+id/tvnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/clist_next_marginright"
+            android:layout_marginTop="4dp"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/clist_next_textsize" />
+
+    </RelativeLayout>
+
+    <com.csipsimple.f5chat.view.OpenRegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/clist_select_margintop"
+        android:gravity="center"
+        android:text="Select your country code"
+        android:textColor="@color/white"
+
+        android:textSize="@dimen/clist_select_textsize"
+        android:layout_marginBottom="@dimen/clist_select_marginbottom"/>
+
+    <ListView
+        android:id="@+id/countrylist"
+        android:listSelector="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>
+

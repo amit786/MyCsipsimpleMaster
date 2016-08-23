@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/new_page"
+        android:title="New Page" />
+    <item android:id="@+id/camera"
+        android:title="Camera" />
+    <item android:id="@+id/choose_from_gallery"
+        android:title="Choose from gallery" />
+    <item android:id="@+id/erase"
+        android:title="Erase" />
+    <item android:id="@+id/opacity"
+        android:title="Opacity" />
+    <item android:id="@+id/save"
+        android:title="Send" />
+
+</menu>

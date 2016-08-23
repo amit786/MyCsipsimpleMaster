@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+            android:id="@+id/f5chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="F5chat"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:visibility="gone" />
+
+        <com.csipsimple.f5chat.font_family.Font_Welcome_scr_Tv_light
+            android:id="@+id/f5chat_Connected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/welcome_screen_two"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:visibility="gone" />
+
+        <com.csipsimple.f5chat.font_family.Font_Welcome_scr_Tv_light
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="By logging in,you are agreeing to F5chat"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:gravity="center"
+            android:text="@string/your_string_here"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pager_progess"
+            android:layout_width="49dp"
+            android:layout_height="9dp"
+            android:layout_below="@+id/terms"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/swipe_dot_left"
+            android:visibility="visible" />
+
+        <com.csipsimple.f5chat.view.OpenRegularButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_rounded_corners"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:weightSum="1"
+        android:background="@color/grey">
+        <ImageView
+            android:layout_weight=".15"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.25"
+            android:scaleY="1.25"
+            android:layout_marginLeft="10dp"
+
+
+            android:src="@drawable/searchicon"
+            />
+ <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".85"
+            android:hint="Search"
+            android:textSize="21dp"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+
+    <ListView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/allcontactlist"
+         />
+</LinearLayout>

@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.csipsimple"
+        minSdkVersion 15
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'com.android.support:support-v4:21.0.+'
+    compile files('libs/android-viewbadger.jar')
+    compile files('libs/common-lang3.jar')
+    compile files('libs/gson-2.2.2.jar')
+
+    compile 'org.apache.httpcomponents:httpclient:4.5.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'org.igniterealtime.smack:smack-android-extensions:4.1.0-alpha6'
+    compile 'org.igniterealtime.smack:smack-tcp:4.1.0-alpha6'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'me.grantland:autofittextview:0.2.+'
+    compile 'com.isseiaoki:simplecropview:1.1.4'
+    compile 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    compile 'com.github.lguipeng:AnimCheckBox:1.0.0'
+}

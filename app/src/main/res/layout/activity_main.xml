@@ -1,0 +1,272 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Top Buttons -->
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/darkgrey">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/grey_select_effect"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/back_arrow_chat" />
+        </LinearLayout>
+
+        <com.csipsimple.f5chat.view.OpenRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Send Drawing"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/menu_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="12dp"
+                android:paddingRight="18dp"
+                android:src="@drawable/menu_selector" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!-- Custom View -->
+
+    <com.csipsimple.f5chat.drawingfun.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="7">
+
+        <LinearLayout
+            android:id="@+id/selectbrush"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sketch_pencil_background">
+
+            <ImageButton
+                android:id="@+id/select_brush_image"
+                android:layout_width="30dp"
+                android:layout_height="22dp"
+                android:layout_gravity="top|right"
+                android:layout_margin="5dp"
+                android:background="@drawable/sketch_pencil" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/paint_colors"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sketch_white_dot"
+                android:onClick="paintClicked"
+                android:tag="#ffffff" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sketch_red_color"
+                android:onClick="paintClicked"
+                android:tag="#FF0202" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sketch_dot_green"
+                android:onClick="paintClicked"
+                android:tag="#7FD323" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sketch_dot_yellow"
+                android:onClick="paintClicked"
+                android:tag="#F8E71E" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sketch_dot_skyblue"
+                android:onClick="paintClicked"
+                android:tag="#51E3C2" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sketch_dot_blue"
+                android:onClick="paintClicked"
+                android:tag="#4B91E2" />
+
+        </LinearLayout>
+
+        <!-- Color Palette -->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--&lt;!&ndash; Top Row &ndash;&gt;-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/paint_colors"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageButton-->
+        <!--android:layout_width="@dimen/large_brush"-->
+        <!--android:layout_height="@dimen/large_brush"-->
+        <!--android:layout_margin="2dp"-->
+        <!--android:background="#FF660000"-->
+        <!--android:contentDescription="@string/paint"-->
+        <!--android:onClick="paintClicked"-->
+        <!--android:src="@drawable/paint"-->
+        <!--android:tag="#FF660000" />-->
+
+        <!--<ImageButton-->
+        <!--android:layout_width="@dimen/large_brush"-->
+        <!--android:layout_height="@dimen/large_brush"-->
+        <!--android:layout_margin="2dp"-->
+        <!--android:background="#FFFF0000"-->
+        <!--android:contentDescription="@string/paint"-->
+        <!--android:onClick="paintClicked"-->
+        <!--android:src="@drawable/paint"-->
+        <!--android:tag="#FFFF0000" />-->
+
+        <!--<ImageButton-->
+        <!--android:layout_width="@dimen/large_brush"-->
+        <!--android:layout_height="@dimen/large_brush"-->
+        <!--android:layout_margin="2dp"-->
+        <!--android:background="#FFFFCC00"-->
+        <!--android:contentDescription="@string/paint"-->
+        <!--android:onClick="paintClicked"-->
+        <!--android:src="@drawable/paint"-->
+        <!--android:tag="#FFFFCC00" />-->
+
+        <!--<ImageButton-->
+        <!--android:layout_width="@dimen/large_brush"-->
+        <!--android:layout_height="@dimen/large_brush"-->
+        <!--android:layout_margin="2dp"-->
+        <!--android:background="#FF009900"-->
+        <!--android:contentDescription="@string/paint"-->
+        <!--android:onClick="paintClicked"-->
+        <!--android:src="@drawable/paint"-->
+        <!--android:tag="#FF009900" />-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--&lt;!&ndash; Bottom Row &ndash;&gt;-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageButton-->
+        <!--android:layout_width="@dimen/large_brush"-->
+        <!--android:layout_height="@dimen/large_brush"-->
+        <!--android:layout_margin="2dp"-->
+        <!--android:background="#FF0000FF"-->
+        <!--android:contentDescription="@string/paint"-->
+        <!--android:onClick="paintClicked"-->
+        <!--android:src="@drawable/paint"-->
+        <!--android:tag="#FF0000FF" />-->
+
+        <!--<ImageButton-->
+        <!--android:layout_width="@dimen/large_brush"-->
+        <!--android:layout_height="@dimen/large_brush"-->
+        <!--android:layout_margin="2dp"-->
+        <!--android:background="#FF990099"-->
+        <!--android:contentDescription="@string/paint"-->
+        <!--android:onClick="paintClicked"-->
+        <!--android:src="@drawable/paint"-->
+        <!--android:tag="#FF990099" />-->
+
+        <!--<ImageButton-->
+        <!--android:layout_width="@dimen/large_brush"-->
+        <!--android:layout_height="@dimen/large_brush"-->
+        <!--android:layout_margin="2dp"-->
+        <!--android:background="#FFFFFFFF"-->
+        <!--android:contentDescription="@string/paint"-->
+        <!--android:onClick="paintClicked"-->
+        <!--android:src="@drawable/paint"-->
+        <!--android:tag="#FFFFFFFF" />-->
+
+        <!--<ImageButton-->
+        <!--android:layout_width="@dimen/large_brush"-->
+        <!--android:layout_height="@dimen/large_brush"-->
+        <!--android:layout_margin="2dp"-->
+        <!--android:background="#FF000000"-->
+        <!--android:contentDescription="@string/paint"-->
+        <!--android:onClick="paintClicked"-->
+        <!--android:src="@drawable/paint"-->
+        <!--android:tag="#FF000000" />-->
+
+
+        <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

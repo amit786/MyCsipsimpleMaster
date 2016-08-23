@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1.8">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:src="@drawable/profileimag" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/end"
+            android:layout_toRightOf="@+id/start"
+            android:layout_weight="1.1"
+            android:orientation="vertical">
+
+            <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+                android:id="@+id/tv_contactname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="name"
+                android:textColor="#1d2432"
+                android:textSize="16dp" />
+
+            <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                android:id="@+id/lastStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_contactname"
+                android:layout_alignRight="@+id/tv_contactname"
+                android:layout_below="@+id/tv_contactname"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:text="typing..." />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/middle"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1.7">
+
+            <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="11/12/2016"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

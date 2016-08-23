@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/groupImg"
+            android:layout_width="@dimen/contactrow_image_width"
+            android:layout_height="@dimen/contactrow_image_height"
+            android:layout_below="@+id/relative"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profileimage"
+            android:layout_marginLeft="10dp"
+            />
+        <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+            android:id="@+id/groupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="@dimen/contactrow_image_textsize"
+            android:textColor="@color/user_name_list"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            />
+    </LinearLayout>
+
+    <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+        android:layout_alignTop="@+id/ll_view"
+        android:layout_alignBottom="@+id/ll_view"
+        android:id="@+id/groupAdmin"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Group Admin"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"
+        android:textColor="@color/light_blue" />
+
+</RelativeLayout>

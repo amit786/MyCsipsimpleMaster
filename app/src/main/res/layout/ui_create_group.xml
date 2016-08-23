@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/tv_group_name_limit"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profileimage"/>
+
+    <TextView
+        android:id="@+id/tv_group_name_limit"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/et_group_name"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="25 characters" />
+
+    <EditText
+        android:singleLine="true"
+        android:hint="Make your group name..."
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_group_name" />
+
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_create"
+        android:text="Next"/>
+</RelativeLayout>

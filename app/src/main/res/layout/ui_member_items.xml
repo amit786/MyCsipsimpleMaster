@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativell"
+
+        android:layout_alignTop="@+id/ll_view"
+        android:layout_alignBottom="@+id/ll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.github.lguipeng.library.animcheckbox.AnimCheckBox
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:stroke_width="1dp"
+            app:stroke_color="#2C3342"
+            android:layout_centerVertical="true"
+            app:circle_color="#C2C5CB"
+            android:id="@+id/checkbox" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/relativell"
+        android:id="@+id/ll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/contactImage"
+            android:layout_width="@dimen/contactrow_image_width"
+            android:layout_height="@dimen/contactrow_image_height"
+            android:layout_below="@+id/relative"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profileimage"
+            />
+        <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+            android:id="@+id/contactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="@dimen/contactrow_image_textsize"
+            android:textColor="@color/user_name_list"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_girl_img">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/chat_header_for_friend_detail"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/friends_chat_back_grey"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/chat_icon"
+                    android:layout_width="@dimen/friend_bottomicon_imagewidth"
+                    android:layout_height="@dimen/friend_bottomicon_imageheight"
+                    android:layout_margin="@dimen/friend_bottomicon_margin"
+                    android:background="@drawable/message_icon_friends_profile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Message"
+                    android:textSize="@dimen/friend_bottomicon_textsize"
+                    android:textColor="@color/confirmcontact" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/friend_bottomicon_imagewidth"
+                    android:layout_height="@dimen/friend_bottomicon_imageheight"
+                    android:layout_margin="@dimen/friend_bottomicon_margin"
+                    android:background="@drawable/call_icon_friends_chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voice Call"
+                    android:textSize="@dimen/friend_bottomicon_textsize"
+                    android:textColor="@color/confirmcontact" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/friend_bottomicon_imagewidth"
+                    android:layout_height="@dimen/friend_bottomicon_imageheight"
+                    android:layout_margin="@dimen/friend_bottomicon_margin"
+                    android:background="@drawable/video_call_friends_chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/friend_bottomicon_textsize"
+                    android:text="Video Call"
+                    android:textColor="@color/confirmcontact" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp"
+            android:layout_marginTop="@dimen/friend_bottomline_margintop"
+
+            android:background="@color/lightgrey"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/friend_number_padding"
+                android:text="      (+91) 9114949235"
+                android:textColor="@color/confirmcontact"
+                android:textSize="@dimen/friend_number_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

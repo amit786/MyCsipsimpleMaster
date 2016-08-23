@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/confirm_main_marginleft"
+        android:layout_marginRight="@dimen/confirm_main_marginright"
+        android:background="@drawable/corner_confirm_phone"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/confirm_main_padding">
+
+
+        <com.csipsimple.f5chat.view.OpenBoldTextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Confirm phone number"
+            android:textColor="#2c3342"
+            android:textSize="@dimen/confirm_phone_textsize"
+            android:textStyle="bold" />
+
+        <com.csipsimple.f5chat.view.OpenRegularTextView
+            android:id="@+id/tvsms1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/confirm_sms_margintop"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:text="A SMS message with your PIN will be sent to your phone number below"
+            android:textColor="#252c39"
+            android:textSize="@dimen/confirm_sms_textsize" />
+
+        <com.csipsimple.f5chat.view.OpenLightTextView
+            android:id="@+id/tvnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/confirm_textnumber_margintop"
+            android:gravity="center"
+            android:text="+89568956582"
+            android:textColor="#2c3342"
+            android:textSize="@dimen/confirm_textnumber_size" />
+
+        <com.csipsimple.f5chat.view.OpenRegularButton
+            android:id="@+id/btagree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/confirm_button_margintop"
+            android:background="@drawable/agree_confirm_button"
+
+            android:padding="@dimen/confirm_agree_padding"
+            android:text="Agree"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/confirm_button_textsize" />
+
+
+        <com.csipsimple.f5chat.view.OpenRegularButton
+            android:id="@+id/btedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/confirm_edit_margintop"
+            android:background="@drawable/confirm_edit_button"
+            android:padding="@dimen/confirm_agree_padding"
+            android:text="Edit"
+            android:textAllCaps="false"
+
+            android:textColor="#ffffff"
+            android:textSize="@dimen/confirm_button_textsize" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2c3342"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/profile_backarrow_image_margin"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/backbutton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                android:id="@+id/headerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_profile_margin"
+                android:text="Group Detail"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/profile_profile_textsize" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/addpartview"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/addParticipant"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_add_user_white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:id="@+id/layout_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:visibility="gone"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+
+            <com.csipsimple.f5chat.font_family.Font_Welcome_scr_Tv_light
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/profile_next_margin"
+                android:gravity="center_vertical"
+                android:text="Done"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/headerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_addMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Participant" />
+
+        <Button
+            android:id="@+id/btn_removeMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Remove Participant" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_profile_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerTwo">
+
+        <LinearLayout
+            android:id="@+id/ll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/edit_profile"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/groupImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/relative"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/profileimage" />
+
+                <com.csipsimple.f5chat.font_family.Font_Welcome_scr_Tv_light
+                    android:id="@+id/tv_change_group_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/groupImage"
+                    android:layout_alignRight="@+id/groupImage"
+                    android:layout_below="@+id/groupImage"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="Upload"
+                    android:textColor="#2c3342"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/groupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="Advantal Group"
+                    android:textColor="@color/user_name_list"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/clearFiled"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_close"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/edit_profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_edit_profile" />
+
+        <com.csipsimple.f5chat.font_family.Font_Welcome_scr_Tv_light
+            android:id="@+id/tv_group_name_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edit_profile"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dp"
+            android:text="25 characters"
+            android:textColor="#2c3342"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <com.csipsimple.f5chat.font_family.Font_Welcome_scr_Tv_light
+        android:id="@+id/tv_group_creation_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_profile_view"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        android:text=""
+        android:textColor="#585858" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_group_creation_detail">
+
+        <LinearLayout
+            android:id="@+id/partipantlimits"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#C2C5CB"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_participant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:text="Participants: "
+                android:textColor="#2c3342"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/participantsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/addParticipant"
+                    android:singleLine="true"
+                    android:text="0/78"
+                    android:textSize="21dp" />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/participantsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/exit_group"
+            android:layout_below="@+id/partipantlimits" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:id="@+id/exit_group"
+            android:background="#C2C5CB"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/ic_exit_group" />
+
+            <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/profile_profile_margin"
+                android:text="Exit Group"
+                android:textColor="#EF3F5B"
+                android:textSize="@dimen/profile_profile_textsize" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

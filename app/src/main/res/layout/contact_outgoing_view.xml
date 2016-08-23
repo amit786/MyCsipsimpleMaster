@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ui_outgoing_bubble"
+            android:orientation="vertical" >
+
+            <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+                android:background="#99F28267"
+                android:padding="5dp"
+                android:id="@+id/shareContact"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textSize="@dimen/contactrow_image_textsize"
+                android:textColor="@color/user_name_list"
+                android:layout_gravity="center_vertical"
+                />
+
+            <LinearLayout
+                android:background="@color/white"
+                android:id="@+id/ll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:padding="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/contactImg"
+                    android:layout_width="@dimen/contactrow_image_width"
+                    android:layout_height="@dimen/contactrow_image_height"
+                    android:layout_below="@+id/relative"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/profileimage"
+                    android:layout_marginLeft="10dp"
+                    />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+                        android:id="@+id/contactName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="name"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/contactrow_image_textsize"
+                        android:textColor="@color/user_name_list"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="14dp"
+                        />
+                    <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+                        android:id="@+id/contactNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="number"
+                        android:textSize="@dimen/contactrow_image_textsize"
+
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="14dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+                android:visibility="gone"
+                android:background="@color/dark_gray"
+                android:padding="10dp"
+                android:id="@+id/addToCotact"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to contact"
+                android:textSize="@dimen/contactrow_image_textsize"
+                android:textColor="@color/user_name_list"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="right"
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:text="03:10 PM"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

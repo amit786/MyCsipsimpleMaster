@@ -1,0 +1,70 @@
+<resources>
+    <!--for confirm number-->
+    <dimen name="confirm_main_padding">20dp</dimen>
+    <dimen name="confirm_main_marginleft">30dp</dimen>
+    <dimen name="confirm_main_marginright">30dp</dimen>
+    <dimen name="confirm_phone_textsize">15sp</dimen>
+    <dimen name="confirm_sms_margintop">15dp</dimen>
+    <dimen name="confirm_sms_textsize">15sp</dimen>
+    <dimen name="confirm_textnumber_margintop">15dp</dimen>
+    <dimen name="confirm_textnumber_size">27sp</dimen>
+    <dimen name="confirm_button_margintop">32dp</dimen>
+    <dimen name="confirm_button_padding">10dp</dimen>
+    <dimen name="confirm_agree_padding">15dp</dimen>
+    <dimen name="confirm_button_textsize">18sp</dimen>
+    <dimen name="confirm_edit_margintop">23dp</dimen>
+    <!--end confirm number-->
+
+   <!--for phone number-->
+   <dimen name="phone_header_margintop">30dp</dimen>
+   <dimen name="phone_imagewidth">55px</dimen>
+   <dimen name="phone_imageheight">55px</dimen>
+   <dimen name="phone_image_marginleft">20dp</dimen>
+   <dimen name="phone_phone_textsize">38sp</dimen>
+   <dimen name="phone_next_marginright">20dp</dimen>
+   <dimen name="phone_next_textsize">33sp</dimen>
+   <dimen name="phone_select_margin_top">55dp</dimen>
+   <dimen name="phone_select_textsize">24sp</dimen>
+   <dimen name="phone_number_margintop">10dp</dimen>
+   <dimen name="phone_country_layout_marginleft">35dp</dimen>
+   <dimen name="phone_country_layout_marginright">35dp</dimen>
+   <dimen name="phone_countr_layouty_margintop">140dp</dimen>
+   <dimen name="phone_country_margintop">40dp</dimen>
+   <dimen name="phone_country_paddingleft">23dp</dimen>
+   <dimen name="phone_country_textsize">32sp</dimen>
+   <dimen name="phone_view_height">1dp</dimen>
+   <dimen name="phone_view_marginleft">4dp</dimen>
+   <dimen name="phone_view_margintop">25dp</dimen>
+   <dimen name="phone_84_marginbottom">25dp</dimen>
+   <dimen name="phone_84_margintop">25dp</dimen>
+   <dimen name="phone_84_paddingleft">19dp</dimen>
+    <dimen name="phone_84_textsize">32sp</dimen>
+    <dimen name="phone_edit_number_textsize">32sp</dimen>
+   <dimen name="phone_term_margintop">160dp</dimen>
+   <dimen name="phone_term_textsize">23sp</dimen>
+   <!--end of phone number-->
+
+    <!-- start of country code-->
+
+    <dimen name="ccode_layout_margintop">10dp</dimen>
+    <dimen name="ccode_layout_marginleft">30dp</dimen>
+    <dimen name="ccode_layout_marginright">30dp</dimen>
+    <dimen name="ccode_country_textsize">30sp</dimen>
+    <dimen name="ccode_view_height">0.3dp</dimen>
+    <dimen name="ccode_view_margintop">10dp</dimen>
+    <!-- start of country code-->
+
+    <!-- start of country list-->
+    <dimen name="clist_header_margintop">15dp</dimen>
+    <dimen name="clist_imagewidth">75px</dimen>
+    <dimen name="clist_imageheight">75px</dimen>
+    <dimen name="clist_image_marginleft">17dp</dimen>
+    <dimen name="clist_country_textsize">35sp</dimen>
+    <dimen name="clist_next_marginright">20dp</dimen>
+    <dimen name="clist_next_textsize">30sp</dimen>
+    <dimen name="clist_select_margintop">20dp</dimen>
+    <dimen name="clist_select_textsize">31sp</dimen>
+    <dimen name="clist_select_marginbottom">30dp</dimen>
+
+    <!-- end of country list-->
+   </resources>

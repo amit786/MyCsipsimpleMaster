@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgrey"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layou_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="0.75">
+        <!--android:layout_marginTop="20dp"-->
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="0.3"
+            android:orientation="horizontal"
+            android:padding="@dimen/phone_header_layoutpadding"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/phone_imagewidth"
+                    android:layout_height="@dimen/phone_imageheight"
+                    android:layout_marginLeft="@dimen/phone_image_marginleft"
+                    android:src="@drawable/backbutton" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/phone_phonetext_marginleft"
+                    android:text="Phone number"
+                    android:textColor="@color/white"
+
+                    android:textSize="@dimen/phone_phone_textsize" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="right"
+                android:orientation="horizontal">
+                <com.csipsimple.f5chat.view.OpenRegularTextView
+                    android:id="@+id/tvnext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/phone_next_marginright"
+                    android:text="Next"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/phone_next_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/phone_select_country_marginleft"
+            android:layout_marginRight="@dimen/phone_select_country_marginright">
+
+            <com.csipsimple.f5chat.view.OpenRegularTextView
+                android:id="@+id/select_codeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/header"
+                android:layout_marginTop="@dimen/phone_select_margin_top"
+                android:gravity="center"
+                android:text="@string/country_code_selection_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/phone_select_textsize" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/select_codeTV"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/phone_countrycode_marginleft"
+                android:layout_marginRight="@dimen/phone_countrycode_marginright"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/phone_countrycode_margintop"
+
+                    android:background="@drawable/corner_top">
+
+                    <com.csipsimple.f5chat.view.OpenRegularTextView
+                        android:id="@+id/tvcountryname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/phone_countrycode_padding"
+                        android:paddingLeft="@dimen/phone_countrycode_paddingleft"
+                        android:text="Country code"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/phone_country_textsize" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="@color/darkgrey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corner_bottom"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <com.csipsimple.f5chat.view.OpenRegularTextView
+                        android:id="@+id/tvccode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:paddingLeft="2dp"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/phone_84_textsize" />
+
+                    <com.csipsimple.f5chat.view.OpenRegularEditText
+                        android:id="@+id/etphonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:cursorVisible="false"
+                        android:enabled="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="number"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/phone_edit_number_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="terms and conditions"
+                android:textColor="@color/terms"
+                android:textSize="@dimen/phone_term_textsize" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layou_top"
+        android:layout_weight="1.9"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:weightSum="0.8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0.4dp"
+            android:layout_weight="0.2"
+            android:background="#1F242D"
+            android:weightSum="0.9">
+
+            <TextView
+                android:id="@+id/bt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="0dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/keypad_effect"
+                android:gravity="center"
+                android:text="1"
+                android:padding="5.5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/phone_keypad_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"></View>
+
+            <TextView
+                android:id="@+id/bt2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/keypad_effect"
+                android:gravity="center"
+                android:text="2"
+                android:padding="5.5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/phone_keypad_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"></View>
+
+            <TextView
+                android:id="@+id/bt3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/keypad_effect"
+                android:gravity="center"
+                android:padding="5.5dp"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/phone_keypad_textsize" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0.4dp"
+            android:layout_weight="0.2"
+            android:background="#1F242D"
+            android:weightSum="0.9">
+
+            <TextView
+                android:id="@+id/bt4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/keypad_effect"
+                android:gravity="center"
+                android:text="4"
+                android:padding="5.5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/phone_keypad_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"></View>
+
+            <TextView
+                android:id="@+id/bt5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/keypad_effect"
+                android:gravity="center"
+                android:text="5"
+                android:padding="5.5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/phone_keypad_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"></View>
+
+            <TextView
+                android:id="@+id/bt6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/keypad_effect"
+                android:gravity="center"
+                android:text="6"
+                android:padding="5.5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/phone_keypad_textsize" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0.4dp"
+            android:layout_weight="0.2"
+            android:background="#1F242D"
+            android:weightSum="0.9">
+
+            <TextView
+                android:id="@+id/bt7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/keypad_effect"
+                android:gravity="center"
+                android:text="7"
+                android:padding="5.5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/phone_keypad_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"></View>
+
+            <TextView
+                android:id="@+id/bt8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/keypad_effect"
+                android:gravity="center"
+                android:text="8"
+                android:padding="5.5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/phone_keypad_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"></View>
+
+            <TextView
+                android:id="@+id/bt9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/keypad_effect"
+                android:gravity="center"
+                android:text="9"
+                android:padding="5.5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/phone_keypad_textsize" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="#1a1e26"
+            android:weightSum="0.9">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text=" "
+
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"></View>
+
+            <TextView
+                android:id="@+id/bt0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:background="@drawable/keypad_effect"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/phone_keypad_textsize" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:background="#000000"></View>
+
+
+            <LinearLayout
+                android:id="@+id/imgclr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:gravity="center"
+                    android:src="@drawable/backsmall" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

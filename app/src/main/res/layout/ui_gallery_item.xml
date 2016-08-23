@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/participantImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relative"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profileimage"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+    <com.csipsimple.f5chat.view.OpenSemiBoldTextView
+        android:layout_alignTop="@+id/ll_view"
+        android:layout_alignBottom="@+id/ll_view"
+        android:id="@+id/groupAdmin"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Group Admin"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="18dp"
+        android:textColor="@color/light_blue" />
+
+</RelativeLayout>

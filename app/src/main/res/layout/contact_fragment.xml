@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/white"-->
+        <!-- app:layout_behavior="@string/appbar_scrolling_view_behavior" /> -->
+
+
+        <LinearLayout
+            android:id="@+id/llheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkgrey"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/borderlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/border_white">
+
+                    <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                        android:id="@+id/textviewf5chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="  F5Chat  "
+                        android:background="@drawable/left_frag_selecter"
+                        android:textColor="@color/upper_text_color_change_selector"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/black" />
+
+                    <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                        android:id="@+id/textviewall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="      All      "
+                        android:background="@drawable/right_frag_selecter"
+                        android:textColor="@color/upper_text_color_change_selector"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/plus"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20sp"
+                    android:src="@drawable/addimg" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alphabetsearch"
+            android:layout_width="20dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/llheader"
+            android:background="@color/searchbackground"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoutone">
+
+            <TextView
+                android:id="@+id/tvAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="F5Chat Contacts"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_missed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoutone">
+
+            <TextView
+                android:id="@+id/tvMissed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="All contacts"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/f5contactlistlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llheader"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/f5searchheader"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/contacttab_header_layout_height"
+                android:background="@color/searchbackground"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".15"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/searchimg" />
+
+                <EditText
+                    android:id="@+id/f5edittextsearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/contacttab_search_edit_marginleft"
+                    android:layout_weight=".85"
+                    android:background="@null"
+                    android:hint="Search"
+                    android:singleLine="true"
+                    android:textSize="21dp" />
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/f5contactslist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f5searchheader"
+                android:layout_marginRight="20dp"
+                android:divider="@null" />
+
+            <LinearLayout
+                android:id="@+id/side_index"
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/searchbackground"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"></LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/allcontactlistlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llheader"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/searchheader"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/contacttab_header_layout_height"
+                android:background="@color/grey"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".15"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/searchimg" />
+
+                <EditText
+                    android:id="@+id/alledittextsearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/contacttab_search_edit_marginleft"
+                    android:layout_weight=".85"
+                    android:background="@null"
+                    android:hint="Search"
+                    android:singleLine="true"
+                    android:textSize="21dp" />
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/allcontactlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchheader"
+                android:layout_marginRight="20dp"
+                android:divider="@null" />
+
+            <LinearLayout
+                android:id="@+id/side_index1"
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:background="@color/searchbackground"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true">
+                <!--android:layout_below="@+id/f5searchheader"-->
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

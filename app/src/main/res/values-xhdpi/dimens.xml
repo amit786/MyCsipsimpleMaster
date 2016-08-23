@@ -1,0 +1,285 @@
+<resources>
+    <!-- start welcome one -->
+
+    <dimen name="welone_f5_marginbottom">10dp</dimen>
+    <dimen name="welone_f5_textsize">40sp</dimen>
+    <dimen name="welone_center_marginbottom">5dp</dimen>
+    <dimen name="welone_center_textsize">13sp</dimen>
+    <dimen name="welone_terms_marginbottom">5dp</dimen>
+    <dimen name="welone_terms_textsize">13sp</dimen>
+    <dimen name="welone_dot_margintop">10dp</dimen>
+    <dimen name="welone_button_margin">30dp</dimen>
+    <dimen name="welone_button_textsize">16sp</dimen>
+    <!-- start welcome one -->
+
+
+    <!-- start welcome two -->
+    <dimen name="weltwo_marginbottom">16dp</dimen>
+    <dimen name="weltwo_textsize">35sp</dimen>
+    <!-- start welcome two -->
+
+    <!-- start welcome three -->
+    <dimen name="welthree_marginbottom">5dp</dimen>
+    <dimen name="welthree_textsize">32sp</dimen>
+    <!-- start welcome three -->
+    <!--for confirm number-->
+    <dimen name="confirm_main_padding">20dp</dimen>
+    <dimen name="confirm_main_marginleft">20dp</dimen>
+    <dimen name="confirm_main_marginright">20dp</dimen>
+    <dimen name="confirm_phone_textsize">19sp</dimen>
+    <dimen name="confirm_sms_margintop">20dp</dimen>
+    <dimen name="confirm_sms_textsize">15sp</dimen>
+    <dimen name="confirm_textnumber_margintop">23dp</dimen>
+    <dimen name="confirm_textnumber_size">31sp</dimen>
+    <dimen name="confirm_button_margintop">32dp</dimen>
+    <dimen name="confirm_button_padding">10dp</dimen>
+    <dimen name="confirm_agree_padding">15dp</dimen>
+    <dimen name="confirm_button_textsize">18sp</dimen>
+    <dimen name="confirm_edit_margintop">23dp</dimen>
+    <!--end confirm number-->
+    <!--for phone number-->
+    <dimen name="phone_header_margintop">15dp</dimen>
+    <dimen name="phone_imagewidth">40px</dimen>
+    <dimen name="phone_imageheight">40px</dimen>
+    <dimen name="phone_image_marginleft">10dp</dimen>
+    <dimen name="phone_phone_textsize">20sp</dimen>
+    <dimen name="phone_next_marginright">13dp</dimen>
+    <dimen name="phone_next_textsize">17sp</dimen>
+    <dimen name="phone_select_margin_top">35dp</dimen>
+    <dimen name="phone_select_textsize">17sp</dimen>
+    <dimen name="phone_number_margintop">8dp</dimen>
+    <dimen name="phone_country_layout_marginleft">25dp</dimen>
+    <dimen name="phone_country_layout_marginright">25dp</dimen>
+    <dimen name="phone_countr_layouty_margintop">90dp</dimen>
+    <dimen name="phone_country_margintop">20dp</dimen>
+    <dimen name="phone_country_paddingleft">17dp</dimen>
+    <dimen name="phone_country_textsize">20sp</dimen>
+    <dimen name="phone_view_height">1dp</dimen>
+    <dimen name="phone_view_marginleft">4dp</dimen>
+    <dimen name="phone_view_margintop">18dp</dimen>
+    <dimen name="phone_84_marginbottom">18dp</dimen>
+    <dimen name="phone_84_margintop">18dp</dimen>
+    <dimen name="phone_84_paddingleft">17dp</dimen>
+    <dimen name="phone_84_textsize">20sp</dimen>
+    <dimen name="phone_edit_number_textsize">20sp</dimen>
+    <dimen name="phone_term_margintop">150dp</dimen>
+    <dimen name="phone_term_textsize">17sp</dimen>
+    <dimen name="phone_header_layoutpadding">7dp</dimen>
+    <dimen name="phone_phonetext_marginleft">15dp</dimen>
+    <dimen name="phone_select_country_marginleft">4dp</dimen>
+    <dimen name="phone_select_country_marginright">4dp</dimen>
+    <dimen name="phone_countrycode_marginleft">25dp</dimen>
+    <dimen name="phone_countrycode_marginright">25dp</dimen>
+    <dimen name="phone_countrycode_margintop">45dp</dimen>
+    <dimen name="phone_countrycode_paddingleft">10dp</dimen>
+    <dimen name="phone_countrycode_padding">11dp</dimen>
+    <dimen name="phone_keypad_textsize">30sp</dimen>
+    <!--end of phone number-->
+
+    <!-- start of country code-->
+
+    <dimen name="ccode_layout_margintop">10dp</dimen>
+    <dimen name="ccode_layout_marginleft">30dp</dimen>
+    <dimen name="ccode_layout_marginright">30dp</dimen>
+    <dimen name="ccode_country_textsize">18sp</dimen>
+    <dimen name="ccode_view_height">0.3dp</dimen>
+    <dimen name="ccode_view_margintop">10dp</dimen>
+    <!-- start of country code-->
+
+    <!-- start of country list-->
+    <dimen name="clist_header_margintop">15dp</dimen>
+    <dimen name="clist_imagewidth">40px</dimen>
+    <dimen name="clist_imageheight">40px</dimen>
+    <dimen name="clist_image_marginleft">10dp</dimen>
+    <dimen name="clist_country_textsize">20sp</dimen>
+    <dimen name="clist_next_marginright">10dp</dimen>
+    <dimen name="clist_next_textsize">18sp</dimen>
+    <dimen name="clist_select_margintop">15dp</dimen>
+    <dimen name="clist_select_textsize">18sp</dimen>
+    <dimen name="clist_select_marginbottom">30dp</dimen>
+
+    <!-- end of country list-->
+
+    <!--start of verification-->
+    <dimen name="veri_half_layout_marginbottom">20dp</dimen>
+    <dimen name="veri_backarrow_margin">10dp</dimen>
+    <dimen name="veri_enter_pin_textsize">18sp</dimen>
+    <dimen name="veri_next_textsize">16sp</dimen>
+    <dimen name="veri_enter_yourPin_margintop">15dp</dimen>
+    <dimen name="veri_enter_yourPin_textsize">16sp</dimen>
+    <dimen name="veri_dashlayour_margintop">20dp</dimen>
+    <dimen name="veri_dashimage_margin">5dp</dimen>
+    <dimen name="veri_dashnumber_layoutwidth">27dp</dimen>
+    <dimen name="veri_dashnumber_textsize">28sp</dimen>
+    <dimen name="vari_dashcenter_marginleft">10dp</dimen>
+    <dimen name="vari_dashcenter_marginright">10dp</dimen>
+    <dimen name="veri_submit_marginleft">40dp</dimen>
+    <dimen name="veri_submit_marginright">40dp</dimen>
+    <dimen name="veri_submit_margintop">10dp</dimen>
+    <dimen name="veri_submit_marginbottom">14dp</dimen>
+    <dimen name="veri_submit_textsize">18sp</dimen>
+    <dimen name="veri_request_pin_margintop">30dp</dimen>
+    <dimen name="veri_request_pin_textsize">18sp</dimen>
+    <dimen name="veri_keypad_margintop">20dp</dimen>
+    <dimen name="veri_keypad_textsize">27sp</dimen>
+    <dimen name="veri_if_textsize">18sp</dimen>
+
+    <!--end of verification-->
+
+    <!-- start contact dialog-->
+    <dimen name="contact_main_layoutpadding">20dp</dimen>
+    <dimen name="contact_main_marginleft">25dp</dimen>
+    <dimen name="contact_main_marginright">25dp</dimen>
+    <dimen name="contact_layout_margintop">15dp</dimen>
+    <dimen name="contact_contact_textsize">19sp</dimen>
+    <dimen name="contact_maintext_margintop">10dp</dimen>
+    <dimen name="contact_maintext_textsize">13sp</dimen>
+    <dimen name="contact_button_margintop">40dp</dimen>
+    <dimen name="contact_button_marginbottom">12dp</dimen>
+    <dimen name="contact_button_textsize">16sp</dimen>
+    <dimen name="contact_button_padding">10sp</dimen>
+
+    <!-- start contact dialog-->
+
+    <!-- start of contact dialog-->
+    <dimen name="contactdialog_allow_textsize">13sp</dimen>
+    <!-- end of contact dialog-->
+
+    <!-- start of profile SCREEN-->
+    <dimen name="profile_layout_margintop">20dp</dimen>
+    <dimen name="profile_backarrow_image_margin">10dp</dimen>
+    <dimen name="profile_profile_margin">10dp</dimen>
+    <dimen name="profile_profile_textsize">18dp</dimen>
+    <dimen name="profile_next_margin">10dp</dimen>
+    <dimen name="profile_next_textsize">16dp</dimen>
+    <dimen name="profile_image_width">110dp</dimen>
+    <dimen name="profile_image_height">110dp</dimen>
+    <dimen name="profile_image_margintop">25dp</dimen>
+    <dimen name="profile_entername_layoutheight">50dp</dimen>
+    <dimen name="profile_entername_margin">45dp</dimen>
+    <dimen name="profile_entername_margintop">41dp</dimen>
+    <dimen name="profile_entername_textsize">17sp</dimen>
+    <dimen name="profile_log_layoutmargin">7dp</dimen>
+    <dimen name="profile_social_margintop">15dp</dimen>
+    <dimen name="profile_log_textsize">15sp</dimen>
+
+
+
+    <!-- end of profile screen -->
+
+    <!-- start of contact tab-->
+
+    <dimen name="contacttab_header_layout_height">40dp</dimen>
+    <dimen name="contacttab_search_image_marginleft">10dp</dimen>
+    <dimen name="contacttab_search_image_margintop">17dp</dimen>
+    <dimen name="contacttab_search_edit_marginleft">15dp</dimen>
+
+
+    <!-- end of contact tab-->
+
+
+
+    <!-- start contact row-->
+    <dimen name="contactrow_image_height">40dp</dimen>
+    <dimen name="contactrow_image_width">40dp</dimen>
+    <dimen name="contactrow_image_textsize">15sp</dimen>
+    <!-- end contact row-->
+
+    <!-- start friend detail page-->
+    <dimen name="friend_back_width">12dp</dimen>
+    <dimen name="friend_back_height">18dp</dimen>
+    <dimen name="friend_back_margin">10dp</dimen>
+    <dimen name="friend_username_margin">10dp</dimen>
+    <dimen name="friend_username_textsize">17sp</dimen>
+    <dimen name="friend_online_margin">10dp</dimen>
+    <dimen name="friend_online_textsize">16sp</dimen>
+    <dimen name="friend_edit_textsize">15sp</dimen>
+    <dimen name="friend_edit_marginright">5dp</dimen>
+    <dimen name="friend_callvideoimage_width">30dp</dimen>
+    <dimen name="friend_callvideoimage_height">30dp</dimen>
+    <dimen name="friend_callvideoimage_marginbottom">10dp</dimen>
+    <dimen name="friend_callvideoimage_margintop">10dp</dimen>
+    <dimen name="friend_callimage_marginleft">18dp</dimen>
+    <dimen name="friend_bottomicon_imagewidth">40dip</dimen>
+    <dimen name="friend_bottomicon_imageheight">40dip</dimen>
+    <dimen name="friend_bottomicon_margin">18dp</dimen>
+    <dimen name="friend_bottomicon_textsize">14sp</dimen>
+    <dimen name="friend_bottomline_margintop">12dp</dimen>
+    <dimen name="friend_number_padding">12dp</dimen>
+    <dimen name="friend_number_textsize">16sp</dimen>
+
+    <!-- start friend detail page-->
+
+    <!-- start chat interface page-->
+
+    <dimen name="chat_list_dividerheight">3dp</dimen>
+    <dimen name="chat_plusicon_marginleft">5dp</dimen>
+    <dimen name="chat_plusicon_width">22dp</dimen>
+    <dimen name="chat_plusicon_height">22dp</dimen>
+    <dimen name="chat_plusicon_margin">10dp</dimen>
+    <dimen name="chat_emogi_width">24dp</dimen>
+    <dimen name="chat_emogi_height">24dp</dimen>
+    <dimen name="chat_emogi_margin">10dp</dimen>
+    <dimen name="chat_edittext_layoutmargin">10dp</dimen>
+    <dimen name="chat_edittext_padding">5dp</dimen>
+    <dimen name="chat_keyboard_marginright">5dp</dimen>
+    <dimen name="chat_sendicon_width">30dp</dimen>
+    <dimen name="chat_sendicon_height">30dp</dimen>
+    <dimen name="chat_sendicon_margin">10dp</dimen>
+    <dimen name="chat_keyboard_width">30dp</dimen>
+    <dimen name="chat_keyboard_height">20dp </dimen>
+    <dimen name="chat_keyboard_margin">10dp</dimen>
+
+    <!-- end chat interface page-->
+
+    <!--&lt;!&ndash; start dial pad&ndash;&gt;-->
+    <!--<dimen name="dial_header_margintop">18dp</dimen>-->
+    <!--<dimen name="dial_plusimage_height">23dp</dimen>-->
+    <!--<dimen name="dial_plusimage_width">23dp</dimen>-->
+    <!--<dimen name="dial_edittext_number_textsize">28sp</dimen>-->
+    <!--<dimen name="dial_edittext_marginleft">22dp</dimen>-->
+    <!--<dimen name="dial_clearimage_width">35dp</dimen>-->
+    <!--<dimen name="dial_clearimage_height">35dp</dimen>-->
+    <!--<dimen name="dial_layout_marginleft">30dp</dimen>-->
+    <!--<dimen name="dial_layout_marginright">30dp</dimen>-->
+    <!--<dimen name="dial_layout_margintop">22dp</dimen>-->
+    <!--<dimen name="dial_width">70dp</dimen>-->
+    <!--<dimen name="dial_height">70dp</dimen>-->
+    <!--<dimen name="dial_margin">10dp</dimen>-->
+    <!--<dimen name="dial_num_textsize">28sp</dimen>-->
+    <!--<dimen name="dial_callbutton_margin">30dp</dimen>-->
+    <!--<dimen name="dial_button_width">260dp</dimen>-->
+    <!--<dimen name="dial_button_height">45dp</dimen>-->
+    <!--<dimen name="dial_star_textsize">48sp</dimen>-->
+    <!--<dimen name="dial_hash_textsize">30sp</dimen>-->
+    <!--<dimen name="dial_exit_texxtsize">18sp</dimen>-->
+    <!--<dimen name="dial_alphabet_textsize">12dp</dimen>-->
+    <!--<dimen name="dial_alphabet_marginbottom">10dp</dimen>-->
+    <!--&lt;!&ndash; end dial pad&ndash;&gt;-->
+
+    <!-- start dial pad-->
+    <dimen name="dial_header_margintop">18dp</dimen>
+    <dimen name="dial_plusimage_height">23dp</dimen>
+    <dimen name="dial_plusimage_width">23dp</dimen>
+    <dimen name="dial_edittext_number_textsize">28sp</dimen>
+    <dimen name="dial_edittext_marginleft">22dp</dimen>
+    <dimen name="dial_clearimage_width">35dp</dimen>
+    <dimen name="dial_clearimage_height">35dp</dimen>
+    <dimen name="dial_layout_marginleft">30dp</dimen>
+    <dimen name="dial_layout_marginright">30dp</dimen>
+    <dimen name="dial_layout_margintop">10dp</dimen>
+    <dimen name="dial_width">70dp</dimen>
+    <dimen name="dial_height">70dp</dimen>
+    <dimen name="dial_margin">10dp</dimen>
+    <dimen name="dial_num_textsize">28sp</dimen>
+    <dimen name="dial_callbutton_margin">30dp</dimen>
+    <dimen name="dial_button_width">260dp</dimen>
+    <dimen name="dial_button_height">45dp</dimen>
+    <dimen name="dial_star_textsize">46sp</dimen>
+    <dimen name="hash_size">30sp</dimen>
+    <dimen name="dial_hash_textsize">30sp</dimen>
+    <dimen name="dial_exit_texxtsize">18sp</dimen>
+    <dimen name="dial_alphabet_textsize">12dp</dimen>
+    <dimen name="dial_alphabet_marginbottom">10dp</dimen>
+    <!-- end dial pad-->
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="@color/darkgrey"
+        android:padding="5dip"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.10">
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/layout_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/friend_back_width"
+                    android:layout_height="@dimen/friend_back_height"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/friend_back_margin"
+                    android:background="@drawable/back_arrow_chat" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:id="@+id/userName"
+            android:layout_weight="0.60">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.60">
+                    <com.csipsimple.f5chat.font_family.Font_welcome_scr_Tv_regular
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="left|center"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="18sp"
+                        android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.40">
+                    <com.csipsimple.f5chat.font_family.Font_Welcome_scr_Tv_light
+                        android:id="@+id/tv_user_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="@color/white"
+                         />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.30">
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+               >
+
+                <ImageView
+                    android:id="@+id/video"
+                    android:layout_width="@dimen/friend_callvideoimage_width"
+                    android:layout_height="@dimen/friend_callvideoimage_height"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/vedio_call_icon" />
+
+                <TextView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_gravity="center"
+                     />
+
+                <ImageView
+                    android:layout_width="@dimen/friend_callvideoimage_width"
+                    android:layout_height="@dimen/friend_callvideoimage_height"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/vedio_call_icon"                    android:background="@drawable/audio_call" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
