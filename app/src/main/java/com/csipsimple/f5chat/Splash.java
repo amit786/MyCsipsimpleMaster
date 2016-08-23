@@ -31,6 +31,7 @@ public class Splash extends FragmentActivity {
     private static final String TAG = "SPLASH";
     DatabaseHandler db;
     SharedPrefrence share;
+    //Git testing...
 
     private static int SPLASH_TIME_OUT = 3000;
 
